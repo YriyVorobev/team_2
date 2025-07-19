@@ -87,6 +87,7 @@ shopping.append("яйца")
 shopping.insert(1,"сыр")
 print(shopping)
 
+# git
 # Задача 10
 # Даны два списка:
 # python
