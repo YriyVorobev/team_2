@@ -6,16 +6,19 @@ colors = ['red', 'blue']
 colors.append('green')  # ['red', 'blue', 'green']
 .insert(i, x) – вставить x на позицию i
 
-python
+python insert(1, "bird") - добавляет в указанное по индексу место.сдвигая список.
 animals = ['cat', 'dog']
 animals.insert(1, 'bird')  # ['cat', 'bird', 'dog']
+
+
 📌 2. Изменение элементов
 Замена по индексу
-
-
 python
 letters = ['a', 'b', 'c']
 letters[1] = 'x'  # ['a', 'x', 'c']
+
+
+
 📌 3. Удаление элементов
 del list[i] – удалить элемент по индексу
 
@@ -27,9 +30,14 @@ del items[1]  # ['book', 'pencil']
 python
 items = ['book', 'pen']
 items.clear()  # []
+
+items = ['book', 'pen']
+items.pop(1)
+items = ['book']
+
+
 📌 4. Объединение списков
 + – создать новый список
-
 python
 list1 = [1, 2]
 list2 = [3, 4]
@@ -40,6 +48,8 @@ python
 list1 = [1, 2]
 list2 = [3, 4]
 list1.extend(list2)  # list1 = [1, 2, 3, 4]
+
+
 📌 5. Срезы (slice)
 list[start:end] – получить элементы с start до end-1
 
