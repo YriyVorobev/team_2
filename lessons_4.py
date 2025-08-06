@@ -461,6 +461,7 @@ if has_ticket and has_passport :
     print("Можно лететь")
 
 
+
 # Задача 6 (Комбинированная: if-elif-else + логика)
 # Напиши код для проверки времени суток:
 # python
