@@ -202,7 +202,7 @@ class PlayList:
     def play(self):
         if not self.songs:
             return f"Список пуст"
-         return f"Играет: {self.songs[self.current_track]}"
+        return f"Играет: {self.songs[self.current_track]}"
 
 
 play = PlayList()
