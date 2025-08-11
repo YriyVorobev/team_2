@@ -9,6 +9,8 @@
 
 
 class Robot:
+
+
     name = "R2-D2"
     power = 100
     is_activated = False
@@ -24,6 +26,8 @@ print(Robot.name,Robot.power,Robot.is_activated)
 # is_working (булево значение, по умолчанию True)
 
 class Car:
+
+
     def __init__(self,model,year,is_working=True):
         self.model = model
         self.year = year
@@ -31,6 +35,7 @@ class Car:
 
 
 my_car = Car("Toyota",2020)
+
 print(my_car.model)
 
 
@@ -50,8 +55,10 @@ print(my_car.model)
 
 class Person:
     """Имя человека"""
+
     def __init__(self,name):
         self.name = name
+
 
     def greet(self):
         """Приветствие человека по имени"""
@@ -72,12 +79,16 @@ print(p.greet())
 # "У [owner] на счету [balance] рублей"
 
 class BankAccount:
+
+
     def __init__(self,owner,balance=0):
         self.owner = owner
         self.balance = balance
 
+
     def deposit(self,amount):
         self.balance += amount
+
 
     def show_balance(self):
         return f"У {self.owner} на счету {self.balance} рублей"
@@ -99,10 +110,13 @@ print(account.show_balance())
 # Если книга уже выдана, возвращает "Книга [title] недоступна"
 
 class Book:
+
+
     def __init__(self,title,author,is_available=True):
         self.title = title
         self.author = author
         self.is_available = is_available
+
 
     def borrow(self):
         if self.is_available:
@@ -129,6 +143,7 @@ print(title)
 # make_coffee() — если воды >= 100, уменьшает уровень на 100 и возвращает "Кофе готов", иначе "Недостаточно воды"
 
 class CoffeMachine:
+
 
     def __init__(self):
         self.water_level = 0
@@ -165,6 +180,7 @@ print(coffe.make_coffe())
 
 class PlayList:
 
+
     def __init__(self,songs=None,current_track=0):
         self.songs = songs if songs is not None else []
         self.current_track = current_track
@@ -182,10 +198,12 @@ class PlayList:
         else:
             return self.play()
 
+
     def play(self):
         if not self.songs:
             return f"Список пуст"
-        return f"Играет: {self.songs[self.current_track]}"
+         return f"Играет: {self.songs[self.current_track]}"
+
 
 play = PlayList()
 print(play.add_song(["Шафран","Музыка"]))
@@ -206,15 +224,19 @@ print(play.next())
 
 class Rectangle:
 
+
     def __init__(self,width,height):
         self.width = width
         self.height = height
 
+
     def area(self):
         return self.width * self.height
 
+
     def perimeter(self):
         return 2 * (self.width + self.height)
+
 
 rectangles = Rectangle(2,3)
 print(rectangles.area())
@@ -237,17 +259,21 @@ print(rectangles.perimeter())
 
 class Student:
 
+
     def __init__(self,name,grades=None):
         self.name = name
         self.grades = [] if grades is None else grades
 
+
     def add_grade(self,grade):
         self.grades.append(grade)
+
 
     def get_average(self):
         if not self.grades:
             return 0
         return sum(self.grades) / len(self.grades)
+
 
     def is_excellent(self):
         return self.get_average() >= 4.5
@@ -269,14 +295,18 @@ print(student.is_excellent())
 
 class Lamp:
 
+
     def __init__(self, is_on=False):
         self.is_on = is_on
+
 
     def turn_on(self):
         self.is_on = True
 
+
     def turn_off(self):
         self.is_on = False
+
 
     def status(self):
         if self.is_on:
@@ -306,9 +336,11 @@ print(lamp.status())
 
 class Lamp:
 
+
     is_on = False
     voltage = 220
     model = "Basic"
+
 
 print(Lamp.is_on)
 print(Lamp.voltage)
@@ -324,6 +356,8 @@ print(Lamp.model)
 # Напишите: Подсказка, Проверить (с вашим кодом) или Дальше.
 
 class User:
+
+
     def __init__(self,name,age=18):
         self.name = name
         self.age = age
@@ -344,6 +378,7 @@ print(user.age)
 # Напишите: Подсказка, Проверить (с вашим кодом) или Дальше.
 
 class Counter:
+
 
     def __init__(self,start=0):
         self.value = start
@@ -378,17 +413,22 @@ print(counter.value)
 
 class Calculator:
 
+
     def __init__(self,name="Калькулятор"):
         self.name = name
+
 
     def add(self,a,b):
         return a + b
 
+
     def multiply(self,a,b):
         return a * b
 
-    def get_name(self): 
+
+    def get_name(self):
         return self.name
+
 
 calc = Calculator("Мой калькулятор")
 print(calc.get_name())
@@ -405,14 +445,18 @@ print(calc.multiply(4,2))
 
 class Lamp:
 
+
     def __init__(self, is_on=False):
         self.is_on = is_on
+
 
     def turn_on(self):
         self.is_on = True
 
+
     def turn_off(self):
         self.is_on = False
+
 
     def status(self):
         if self.is_on:
@@ -440,10 +484,14 @@ print(lamp.status())
 
 
 class Counter:
+
+
     total = 0
+
 
     def __init__(self):
         Counter.total +=1
+
 
     def get_total(self):
         return Counter.total
@@ -466,9 +514,11 @@ print(counter.get_total())
 
 class Profile:
 
+
     def __init__(self,name,city="Unknown"):
         self.name = name
         self.city = city
+
 
     def get_info(self):
         return f"Name: {self.name}, City: {self.city}"
@@ -493,6 +543,7 @@ print(profile1.get_info())
 # Готов проверять или дать подсказку/следующую
 
 class TestLine:
+
 
     def __init__(self,text=""):
         self.text = text
@@ -540,6 +591,7 @@ print(test_line.get_text())
 
 
 class Clicker:
+
 
     def __init__(self,count=0):
         self.count = count
