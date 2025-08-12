@@ -368,11 +368,15 @@ class Book(Product):
 
 
     def get_author(self):
-        return f"Author: {self.author}"
+        return self.author
+
+
+    def info(self):
+        base_info = super().info()
+        return f"{base_info}, Author: {self.author}"
 
 
 book = Book("Война и мир", "Толстой")
-
 print(book.info())
 print(book.get_author())
 
