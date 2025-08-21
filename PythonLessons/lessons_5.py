@@ -896,7 +896,6 @@ print(dict(zip(keys,values)))
 grades = {"Math": 90, "Science": 85, "History": 78}
 best_subject = max(grades, key=grades.get)
 print(f"Лучший результат: {best_subject} ({grades[best_subject]})")
-import copy
 
 original = {
     "a": 1,
