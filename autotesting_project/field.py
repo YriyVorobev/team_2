@@ -64,6 +64,7 @@ permanent_address_field = permanent_address.get_attribute("value")
 
 assert "g.Krasnodar st.Lenina 13" in permanent_address_field
 
+
 time.sleep(5)
 
 
