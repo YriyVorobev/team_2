@@ -3,10 +3,17 @@ import time
 from selenium import webdriver
 
 driver = webdriver.Chrome()
+driver.get("https://hyperskill.org/")
 
-driver.get("https://www.saucedemo.com")
+page_url = driver.current_url
+print(page_url)
 
-time.sleep(3)
+
+
+# driver.get("https://www.saucedemo.com")
+
+
+# //a[@class='button-outline w-inline-block']
 
 
 
