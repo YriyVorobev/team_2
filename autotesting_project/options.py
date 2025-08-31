@@ -20,8 +20,14 @@ options.add_argument("--window-size=1920,1080")
 driver = webdriver.Chrome(options=options)
 driver.get("https://demoqa.com/upload-download")
 
-upload_file_field = driver.find_element("xpath","//input[@id='uploadFile']")
-upload_file_field.send_keys(r"/Users/vorobev-yua/PycharmProjects/team2/autotesting_project/get_file.png")
+# upload_file_field = driver.find_element("xpath","//input[@id='uploadFile']")
+# upload_file_field.send_keys(r"/Users/vorobev-yua/PycharmProjects/team2/autotesting_project/get_file.jpeg")
+
+UPLOAD_FILE_FILED = ("xpath","//input[@id='uploadFile']")
+
+file_filed = driver.find_element(*UPLOAD_FILE_FILED)
+file_filed.send_keys(r"/Users/vorobev-yua/PycharmProjects/team2/autotesting_project/get_file.jpeg")
+
 
 time.sleep(3)
 
