@@ -48,10 +48,10 @@ assert "https://www.saucedemo.com/inventory.html" in driver.current_url
 
 add_button = driver.find_element(*ADD_BUTTON)
 action.click(add_button).perform()
-
+time.sleep(3)
 add_button_tshirt = driver.find_element(*ADD_BUTTON_TSHIRT)
 action.click(add_button_tshirt).perform()
-
+time.sleep(3)
 add_button_jacket = driver.find_element(*ADD_BUTTON_JACKET)
 action.click(add_button_jacket).perform()
 
@@ -73,7 +73,7 @@ assert first_name.get_attribute("value") == ""
 
 first_name.send_keys("NameSpace")
 first_name_field = first_name.get_attribute("value")
-
+time.sleep(3)
 assert "NameSpace" in first_name_field
 
 last_name = driver.find_element(*LAST_NAME_FIELD)
@@ -84,7 +84,7 @@ assert last_name.get_attribute("value") == ""
 
 last_name.send_keys("Universe")
 last_name_field = last_name.get_attribute("value")
-
+time.sleep(3)
 assert "Universe" in last_name_field
 
 postal_code = driver.find_element(*POSTAL_CODE)
@@ -95,7 +95,7 @@ assert postal_code.get_attribute("value") == ""
 
 postal_code.send_keys("323455")
 postal_code_field = postal_code.get_attribute("value")
-
+time.sleep(3)
 assert "323455" in postal_code_field
 
 continue_button = driver.find_element(*CONTINUE_BUTTON)
